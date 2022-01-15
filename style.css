@@ -1,98 +1,121 @@
 body {
-	margin: none;
+  margin: -1%;
 }
 
 .nav {
-	height: 89px;
-	min-width: 375px;
-	background-color: #c4c4c4;
+  height: 89px;
+  min-width: 375px;
+  background-color: #c4c4c4;
 }
 
 @media (min-width: 769px) {
-	.nav {
-		height: 117px;
-	}
+  .nav {
+    height: 117px;
+  }
 }
 
 .first-place {
-	background-color: #fec4c4;
-	height: 325px;
-	min-width: 375px;
+  background-color: #fec4c4;
+  height: 325px;
+  min-width: 375px;
 }
 
 @media (min-width: 769px) {
-	.first-place {
-		height: 418px;
-	}
+  .first-place {
+    height: 418px;
+  }
 }
 
 .content-container {
-	display: flex;
-	flex-direction: column;
-	background-color: #c4fec6;
-	height: 620px;
-	min-width: 375px;
-	justify-content: space-evenly;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #c4fec6;
+  height: 620px;
+  min-width: 375px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 @media (min-width: 769px) {
-	.content-container {
-		height: 466px;
-		flex-direction: row;
-	}
+  .content-container {
+    height: 466px;
+    flex-direction: row;
+  }
 }
 
 .content {
-	height: 210px;
-	width: 261px;
-	background-color: #5bc0a2;
+  height: 210px;
+  width: 261px;
+  background-color: #5bc0a2;
 }
 
 .footer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
-	background-color: #c4f3fe;
-	min-width: 375px;
-	height: 554px;
-	padding: 81px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #c4f3fe;
+  min-width: 375px;
+  height: 554px;
+  padding: 81px 0;
 }
 
 @media (min-width: 769px) {
-	.footer {
-		height: 356px;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-	}
+  .footer {
+    height: 356px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 .article {
-	height: 84px;
-	width: 261px;
+  height: 84px;
+  width: 261px;
 }
 /* me quede aca, la idea es utilizar grid para practicar*/
 
-@media (min-width: 769px) {
-}
-
 .one {
-	background-color: #5bb4c0;
+  background-color: #5bb4c0;
 }
 
 .two {
-	background-color: #5bb4c0;
-	opacity: 80%;
+  background-color: #5bb4c0;
+  opacity: 80%;
 }
 
 .three {
-	background-color: #5bb4c0;
-	opacity: 60%;
+  background-color: #5bb4c0;
+  opacity: 60%;
 }
 
 .four {
-	background-color: #5bb4c0;
-	opacity: 40%;
+  background-color: #5bb4c0;
+  opacity: 40%;
+}
+
+@media (min-width: 769px) {
+  .article {
+    margin: auto;
+  }
+
+  .one {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .two {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  .three {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+
+  .four {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
 }
